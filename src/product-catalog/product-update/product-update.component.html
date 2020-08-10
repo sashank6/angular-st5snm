@@ -1,0 +1,18 @@
+<form (ngSubmit)="saveData()" [formGroup]="dataForm" novalidate class="form">
+  <input
+    type="text"
+    formControlName="id"
+    class="form-control"
+    placeholder="Enter the ID"
+  />
+  <input
+    type="text"
+    formControlName="name"
+    class="form-control"
+    placeholder="Enter the Name"
+  />
+  <button class="btn btn-default">Save</button>
+</form>
+
+{{ dataForm.id | json }}
+{{ dataForm.name | json }}
